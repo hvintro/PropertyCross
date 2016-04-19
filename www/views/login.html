@@ -1,0 +1,32 @@
+<ion-view name="login" view-title="Login/Sign Up">
+
+    <ion-content padding="true" >
+
+        <div class="list">
+            <label class="item item-input">
+                <input type="text" placeholder="Email" ng-model="profile.mail">
+            </label>
+            <label class="item item-input">
+                <input type="text" placeholder="Your ultra secret password" ng-model="profile.pass">
+            </label>
+        </div>
+        <button class="button button-block button-balanced" ng-disabled="!profile.pass || !profile.mail" ng-click="sendRequest()">Login!</button>
+        <button class="button button-block button-balanced" ng-disabled="!profile.pass || !profile.mail" ng-click="sendRequest()">Sign UP!</button>
+
+        <p>Or also you can do it by facebook</p>
+
+        <button class="button button-block button-positive" ng-click="loguinwithfacebook()">Facebook</button>
+
+        <!-- <p>{{profile.name}}</p>
+         <p>{{profile.email}}</p>
+         <p>{{profile.friends}}</p>
+         <p>{{profile.photo}}</p>-->
+        <button class="button button-block button-positive" ng-click="Login()">Facebook</button>
+
+    </ion-content>
+
+    <div class="bar bar-footer bar-balanced">
+        <div class="title">Thanks User!! (◉Θ◉)</div>
+    </div>
+
+</ion-view>
