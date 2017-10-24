@@ -4,7 +4,7 @@
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
 angular.module('search', ['request.service','request.controller']);
-angular.module('propertycross', ['ionic', 'search', 'ngCordovaOauth'])
+angular.module('propertycross', ['ionic', 'search', 'ngCordovaOauth','firebase'])
 
 
 .run(function($ionicPlatform,$rootScope) {
@@ -55,7 +55,4 @@ angular.module('propertycross', ['ionic', 'search', 'ngCordovaOauth'])
   url: ' https://push.opentrends.net:8100/mdpa/api'
 });
 
-// For the real endpoint, we'd use this
-// .constant('ApiEndpoint', {
-//  url: 'https://push.opentrends.net:8100/mdpa/api/'
-// })
+//angular.module()
